@@ -25,13 +25,43 @@ repeat(inv_slots) {
 	
 	//draw slot and item
 	draw_sprite_part_ext(spr_inv_UI, 0, 0, 0, cell_size, cell_size, xx, yy, scale, scale, c_white, 1);
-	draw_sprite_part_ext(
-		spr_inv_items, 0, spritex, spritey, cell_size, cell_size,
-		xx, yy, scale, scale, c_white, 1
-	);
-	
+	switch(ii) {
+		case selected_slot:
+			draw_sprite_part_ext(
+				spr_inv_items, 0, spritex, spritey, cell_size, cell_size,
+				xx, yy, scale, scale, c_white, 1
+			);
+			gpu_set_blendmode(bm_add);
+			draw_sprite_part_ext(spr_inv_UI, 0, 0, 0, cell_size, cell_size, xx, yy, scale, scale, c_white, .1);
+			gpu_set_blendmode(bm_normal);
+		break;
+		
+		case pickup_slot:
+			draw_sprite_part_ext(
+				spr_inv_items, 0, spritex, spritey, cell_size, cell_size,
+				xx, yy, scale, scale, c_white, .2
+			);
+		
+		default:
+			draw_sprite_part_ext(
+				spr_inv_items, 0, spritex, spritey, cell_size, cell_size,
+				xx, yy, scale, scale, c_white, 1
+			);
+	}
 	//increment 
 	ii += 1;
 	ix = ii mod inv_slots_width;
 	iy = ii div inv_slots_width;
 }
+
+if (pickup_slot != -1) {
+	
+	currItem = inv_grid[# 0, pickup_slot];
+	spritex = (currItem mod spr_inv_items_columns) * cell_size;
+	spritey = (currItem div spr_inv_items_columns) * cell_size;
+	draw_sprite_part_ext(
+				spr_inv_items, 0, spritex, spritey, cell_size, cell_size,
+				mousex, mousey, scale, scale, c_white, 1
+			);
+}
+	

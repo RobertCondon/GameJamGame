@@ -4,6 +4,12 @@ cell_size = 32;
 depth = -1;
 scale = 2;
 
+selected_slot = 0;
+pickup_slot = -1; 
+
+m_slotx = 0;
+m_sloty = 0;
+
 inv_slots = 9;
 inv_slots_width = 9;
 inv_slots_height = 1;
@@ -27,11 +33,11 @@ inv_UI_x = (gui_width * 0.5) - (inv_UI_width * 0.5 * scale);
 inv_UI_y = gui_height - inv_UI_height;
 
 
-info_x = inv_UI_x + (16 * scale);
-info_y = inv_UI_y + (16 * scale);
+info_x = inv_UI_x + (4 * scale);
+info_y = inv_UI_y + (4 * scale);
 
 slots_x = info_x;
-slots_y = inv_UI_y + (16 * scale);
+slots_y = info_y;
 
 //--------------Inventory
 
@@ -56,13 +62,14 @@ enum item {
 	burgundy	= 14,
 	gold		= 15,
 	fade_blu	= 16,
-	height		= 17
+	fade		= 17,
+	height		= 18
 	
 }
 	
 
 var yy = 0; repeat(inv_slots) {
-	ds_inventory[# 0, yy] = irandom_range(1, item.height-1);
+	ds_inventory[# 0, yy] = yy;
 	
 	yy+= 1;
 }
