@@ -6,7 +6,35 @@ input_right = keyboard_check(ord("D"));
 input_left = keyboard_check(ord("A"));
 input_up = keyboard_check(ord("W"));
 input_down = keyboard_check(ord("S"));
-input_interact = keyboard_check(vk_space);
+input_interact = keyboard_check_pressed(vk_space);
+
+
+//Interact
+if(input_interact) {
+	if (active_textbox = false){
+		var npc = collision_rectangle(x - radius, y - radius, x + radius, y + radius, obj_npc, false, false)
+		if(npc != noone) {
+			with(npc){
+				if(talked_too = false){
+					create_textbox(text, talked_too);
+					talked_too = true;
+				}
+				else{
+					create_textbox(text, talked_too)
+				}
+				
+			}
+		}
+		active_textbox = true;
+	}
+	else{
+		if(!instance_exists(obj_textbox)){
+			active_textbox = false;
+		}
+		
+	}
+}
+
 
 //resetting speeds
 move_x = 0;
