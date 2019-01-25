@@ -2,5 +2,5 @@
 // You can write your code in this editor
 global.MouseLeftGone = noone;
 global.MouseRightGone = noone;
-global.Tab = noone;
+global.Tab = false;
 Holding = false;

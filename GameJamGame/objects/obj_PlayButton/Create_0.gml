@@ -5,7 +5,7 @@ NumberOfSlots = 4;
 AuidoPlaying = false;
 CurrentSlot = noone;
 TotalRight = 0;
-if(room == room0) {
+if(room == roomROBTEST) {
 	WinList[0] = snd_Test1;
 	WinList[1] = snd_Test2;
 	WinList[2] = snd_Test3;

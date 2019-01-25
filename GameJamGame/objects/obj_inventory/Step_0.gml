@@ -52,3 +52,4 @@ else if (ss_item != item.none) {
 	pickup_slot = selected_slot;
 	}
 }
+

@@ -62,18 +62,38 @@ if (pickup_slot != -1) {
 	currItem = inv_grid[# 0, pickup_slot];
 	spritex = (currItem mod spr_inv_items_columns) * cell_size;
 	spritey = (currItem div spr_inv_items_columns) * cell_size;
-	instance_create_layer(mousex, mousey, "Instances", obj_MusicBlock)
-	//(
-//				spr_inv_items, 0, spritex, spritey, cell_size, cell_size,
-//				mousex, mousey, scale, scale, c_white, 1
-//			);
-//}
+	
+	draw_sprite_part_ext(
+				spr_inv_items, 0, spritex, spritey, cell_size, cell_size,
+				mousex, mousey, scale, scale, c_white, 1
+			);
 }
 
+instance_destroy(obj_MusicBlock)	
 } else  {
+	var inv_grid = ds_inventory
+	var ii, ix, iy;
+		ii = 0; ix = 0; iy = 0;
+	var	currItem = inv_grid[# 0, ii];
+	var spritex = (currItem mod spr_inv_items_columns) * cell_size;
+	var spritey = (currItem div spr_inv_items_columns) * cell_size;
 
-	instance_destroy(obj_MusicBlock);
+if(keyboard_check_pressed(vk_tab)){
+	repeat(inv_slots) {
+		
+		xx = slots_x + ((cell_size + x_buffer)  * scale);
+		yy = slots_y + ((cell_size + y_buffer)  * scale);
+		instance = instance_create_layer(100,100, "Instances", obj_MusicBlock);
+		with(instance) {
+			Music = inv_grid[# 0, ii];
+		}
+		ii += 1;
+
+	}
+}
 	
+
+		
 exit};
 
 	

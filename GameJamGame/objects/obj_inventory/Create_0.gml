@@ -10,7 +10,7 @@ pickup_slot = -1;
 m_slotx = 0;
 m_sloty = 0;
 
-inv_slots = 9;
+inv_slots = 3; //----------change this value per level
 inv_slots_width = 9;
 inv_slots_height = 1;
 
@@ -46,9 +46,9 @@ ds_inventory = ds_grid_create(1,inv_slots);
 //------- Items
 enum item {
 	none	= 0,
-	white	= 1,
-	yellow	= 2,
-	green	= 3,
+	snd_Test1	= 1,
+	snd_Test2	= 2,
+	snd_Test4	= 3,
 	salmon	= 4,
 	purple	= 5,
 	blue	= 6,
