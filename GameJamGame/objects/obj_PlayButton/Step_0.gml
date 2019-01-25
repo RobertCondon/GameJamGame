@@ -15,22 +15,28 @@ if(OrderToPlay < NumberOfSlots) {
 			if(CurrentList[OrderToPlay] == WinList[OrderToPlay]) {
 				TotalRight += 1;	
 			}
-			show_debug_message("Sound Win" + string(CurrentList[OrderToPlay]))
-			show_debug_message("Sound Win 2nd" + string(WinList[OrderToPlay]))
 			OrderToPlay += 1;
 		}
-		show_debug_message("TotalRight " + string(TotalRight))
-		show_debug_message("Sound " + string(CurrentList[2]))
 		OrderToPlay = 0;
 		QuickRunThrough = true;
 	}
 	
 	if(AuidoPlaying == false) {
+		with(obj_Slot) {
+				if(Order == other.OrderToPlay) {
+					sprite_index = spr_SlotPlaying;
+				}
+		}
 		audio_play_sound(CurrentList[OrderToPlay], 0, false);
 		AuidoPlaying = true;
 	} else { 
 		
 		if(!audio_is_playing(CurrentList[OrderToPlay]) ){
+			with(obj_Slot) {
+				if(Order == other.OrderToPlay) {
+					sprite_index = spr_Slot;
+				}
+			}
 			OrderToPlay += 1;
 			AuidoPlaying = false;
 		}
