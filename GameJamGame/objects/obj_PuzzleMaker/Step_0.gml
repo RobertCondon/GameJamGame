@@ -25,3 +25,7 @@ with(PlayButton) {
 	x = other.vx + 350;
 	y = other.vy + 50;
 }
+with(Hint) {
+	x = other.vx + 450;
+	y = other.vy + 50;	
+}

@@ -8,6 +8,7 @@ if(room = roomROBTEST) {
 	Slot2 = noone;
 	Slot3 = noone;
 	PlayButton = noone;
+	Hint = noone;
 	with(instance_create_layer(vx + 50, vy +50, "Instances", obj_Slot)) {
 			other.Slot1 = self
 			Order = 0;
@@ -22,5 +23,8 @@ if(room = roomROBTEST) {
 	}
 	with(instance_create_layer(vx + 350, vy +50, "Instances", obj_PlayButton)) {
 			other.PlayButton = self
+	}
+	with(instance_create_layer(vx + 450, vy +50, "Instances", obj_Hint))  {
+		other.Hint = self;
 	}
 }
