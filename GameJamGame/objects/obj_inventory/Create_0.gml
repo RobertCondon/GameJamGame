@@ -10,8 +10,15 @@ pickup_slot = -1;
 
 m_slotx = 0;
 m_sloty = 0;
-
-inv_slots = 3; //----------change this value per level
+if(room == level1) {
+	inv_slots = 2; //----------change this value per level
+} else if(room == level2) {
+	inv_slots = 3; //----------change this value per level
+} else if(room == level3) {
+	inv_slots = 5; //----------change this value per level
+} else {
+	inv_slots = 7; //----------change this value per level
+}
 inv_slots_width = 9;
 inv_slots_height = 1;
 
@@ -73,3 +80,5 @@ var yy = 0; repeat(inv_slots) {
 	ds_inventory[# 0, yy] = -1;
 	yy += 1;
 }
+
+RanThrough = false;

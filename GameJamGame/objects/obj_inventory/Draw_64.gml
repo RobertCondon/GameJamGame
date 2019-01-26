@@ -8,6 +8,7 @@
 
 //------inventory
 if (global.Tab == false) {
+	RanThrough = false
 	draw_sprite_part_ext(
 	spr_inv_UI, 0, cell_size, 0, inv_UI_width, 
 	inv_UI_height, inv_UI_x, inv_UI_y, scale, scale, c_white, 1
@@ -78,27 +79,26 @@ instance_destroy(obj_MusicBlock)
 	var spritex = (currItem mod spr_inv_items_columns) * cell_size;
 	var spritey = (currItem div spr_inv_items_columns) * cell_size;
 
-if(keyboard_check_pressed(vk_tab)){
+if(global.Tab == true){
 	vx = camera_get_view_x(view_camera[0]);
 	vy = camera_get_view_y(view_camera[0]);
-	repeat(filled_slot) {
-		
-		instance = instance_create_layer(vx + 235 + (ii * 33) ,380 ,"Instances", obj_MusicBlock);
-		with(instance) {
-			Music = inv_grid[# 0, ii];
-			sprite_index = inv_grid[# 1, ii];
+	show_debug_message(string(RanThrough));
+	if(RanThrough == false) {
+		RanThrough = true;
+		repeat(filled_slot) {
+			instance = instance_create_layer(vx + 235 + (ii * 33) ,vy + 390 ,"Instances", obj_MusicBlock);
+			with(instance) {
+				Music = inv_grid[# 0, ii];
+				sprite_index = inv_grid[# 1, ii];
 			
 			
+			}
+			ii += 1;
+
 		}
-		ii += 1;
-
 	}
-
-
-		
-
 }
-	
+
 
 		
 exit};

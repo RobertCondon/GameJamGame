@@ -25,5 +25,14 @@ if(room == level1) {
 	NumberOfSlots = 2;
 	CurrentList[0] = noone;
 	CurrentList[1] = noone;
+} else if(room == level2) {
+	WinList[0] = snd_Viola1
+	WinList[1] = snd_Viola2;	
+	WinList[2] = snd_Viola3;	
+	WinListLength = 3;
+	NumberOfSlots = 3;
+	CurrentList[0] = noone;
+	CurrentList[1] = noone;
+	CurrentList[2] = noone;
 }
 QuickRunThrough = false;
