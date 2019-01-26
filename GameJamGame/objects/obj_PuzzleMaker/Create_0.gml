@@ -3,7 +3,7 @@
 Tabbed = false;
 var vx = camera_get_view_x(view_camera[0]);
 var vy = camera_get_view_y(view_camera[0]);
-if(room = roomROBTEST) {
+if(room = roomROBTEST or room = roomROBTEST1) {
 	Slot1 = noone;
 	Slot2 = noone;
 	Slot3 = noone;
