@@ -9,7 +9,7 @@ input_up = keyboard_check(ord("W"));
 input_down = keyboard_check(ord("S"));
 input_interact = keyboard_check_pressed(vk_space);
 
-
+var inv_grid = obj_inventory.ds_inventory;
 //Interact
 if(input_interact) {
 	if (active_textbox = false){
@@ -19,6 +19,10 @@ if(input_interact) {
 				if(talked_too = false){
 					create_textbox(text, talked_too);
 					talked_too = true;
+					if (obj_inventory.filled_slot < obj_inventory.inv_slots) {
+						inv_grid[# 0, obj_inventory.filled_slot] = MusicHeld;
+						obj_inventory.filled_slot += 1;
+					}
 				}
 				else{
 					create_textbox(text, talked_too)

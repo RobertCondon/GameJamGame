@@ -53,3 +53,10 @@ else if (ss_item != item.none) {
 	}
 }
 
+//if(keyboard_check_pressed(vk_space)) {
+//	if (filled_slot < 8) {
+//	ds_inventory[# 0, filled_slot] = obj_npc.MusicHeld;
+//	filled_slot += 1;
+//	} else {exit};
+//}
+
