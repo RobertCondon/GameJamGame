@@ -2,7 +2,6 @@
 // You can write your code in this editor
 
 
-//inputs
 input_right = keyboard_check(ord("D"));
 input_left = keyboard_check(ord("A"));
 input_up = keyboard_check(ord("W"));
@@ -41,11 +40,6 @@ if(input_interact) {
 		
 	}
 }
-
-
-//resetting speeds
-move_x = 0;
-move_y = 0;
 
 //updating movement
 if (global.Tab == true){
@@ -91,3 +85,6 @@ if(move_y > 0){
 
 x += move_x;
 y += move_y;
+
+
+

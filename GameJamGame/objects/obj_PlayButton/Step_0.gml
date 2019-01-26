@@ -51,6 +51,9 @@ if(OrderToPlay < NumberOfSlots) {
 	QuickRunThrough = false;	
 	if(TotalRight == NumberOfSlots) {
 		show_message("CORRECT");
+		if(room == level1) {
+			room_goto(level2);	
+		}
 		TotalRight = 0;
 	} else {
 		TotalRight = 0;	

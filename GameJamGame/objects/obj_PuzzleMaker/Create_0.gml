@@ -25,7 +25,7 @@ with(instance_create_layer(vx + 450, vy +50, "Instances", obj_Hint))  {
 	other.Hint = self;
 }
 
-if(room = roomROBTEST or room = roomROBTEST1) {
+if(room != level1) {
 	
 	Slot3 = noone;
 	
