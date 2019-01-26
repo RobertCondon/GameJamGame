@@ -1,9 +1,12 @@
 /// @description Insert description here
 // You can write your code in this editor
+
+//Texbox
 draw_sprite(box, 0 ,box_x, box_y);
 
 
 
+//Text
 var c = text_color;
 
 draw_set_halign(fa_left);
