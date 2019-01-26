@@ -12,3 +12,12 @@ TalkedToNPC = 0;
 stop = false;
 text[0] = "I Remember Now!";
 draw_wall = false;
+
+
+talk[0] = "Huh where am I? Maybe I should go talk to some of the locals. Press space to continue";
+talk[1] = "Use WASD to move around";
+talk[2] = "Use the SPACE key to interact and the TAB to open your melody screen";
+talk[3] = "Complete the melody and find the exit to continue on your way home";
+
+
+if (room = level1) create_textbox(talk, false);
