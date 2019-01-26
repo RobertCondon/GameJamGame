@@ -19,6 +19,7 @@ if(input_interact) {
 				if(talked_too = false){
 					create_textbox(text, talked_too);
 					talked_too = true;
+					other.TalkedToNPC += 1;
 					if (obj_inventory.filled_slot < obj_inventory.inv_slots) {
 						inv_grid[# 0, obj_inventory.filled_slot] = MusicHeld;
 						inv_grid[# 1, obj_inventory.filled_slot] = SpriteHeld;

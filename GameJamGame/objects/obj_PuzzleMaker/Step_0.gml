@@ -25,6 +25,9 @@ with(PlayButton) {
 with(Hint) {
 	x = other.vx + 450;
 	y = other.vy + 50;	
+	if(other.TotalyNPCs == obj_player.TalkedToNPC) {
+		Hint = "Good job you got all the pieces. Your hint is: The tress rot away";
+	}
 }
 if(room != level1) {
 	with(Slot3) {

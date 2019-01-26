@@ -7,6 +7,7 @@ Slot1 = noone;
 Slot2 = noone;
 PlayButton = noone;
 Hint = noone;
+TotalyNPCs = 0;
 with(instance_create_layer(vx + 50, vy +50, "Instances", obj_Slot)) {
 		other.Slot1 = self
 		Order = 0;
@@ -34,3 +35,7 @@ if(room = roomROBTEST or room = roomROBTEST1) {
 	}
 	
 }
+with(obj_npc) {
+	other.TotalyNPCs += 1;
+}
+show_message(string(TotalyNPCs));
