@@ -4,6 +4,7 @@ cell_size = 32;
 depth = -1;
 scale = 2;
 
+filled_slot = 0;
 selected_slot = 0;
 pickup_slot = -1; 
 
@@ -46,9 +47,9 @@ ds_inventory = ds_grid_create(1,inv_slots);
 //------- Items
 enum item {
 	none	= 0,
-	snd_Test1	= 1,
-	snd_Test2	= 2,
-	snd_Test4	= 3,
+	a	= 1,
+	qwe	= 2,
+	dsf	= 3,
 	salmon	= 4,
 	purple	= 5,
 	blue	= 6,
@@ -66,10 +67,9 @@ enum item {
 	height		= 18
 	
 }
-	
 
-/*var yy = 0; repeat(inv_slots) {
-	ds_inventory[# 0, yy] = yy;
-	
-	yy+= 1;
-}*/
+
+var yy = 0; repeat(inv_slots) {
+	ds_inventory[# 0, yy] = -1;
+	yy += 1;
+}
