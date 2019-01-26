@@ -86,7 +86,7 @@ if(global.Tab == true){
 	if(RanThrough == false) {
 		RanThrough = true;
 		repeat(filled_slot) {
-			instance = instance_create_layer(vx + 235 + (ii * 33) ,vy + 390 ,"Instances", obj_MusicBlock);
+			instance = instance_create_layer(vx + 235 + (ii * 33) ,vy + 390 ,"Paper", obj_MusicBlock);
 			with(instance) {
 				Music = inv_grid[# 0, ii];
 				sprite_index = inv_grid[# 1, ii];

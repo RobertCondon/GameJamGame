@@ -6,3 +6,5 @@ if(sprite_index == spr_Slot) {
 } else {
 	draw_rectangle_color(self.x-24, self.y-24, self.x+24, self.y+24, c_red, c_red, c_red, c_red, true);
 }
+
+draw_text_transformed(x,y-5, string(Number), 0.5, 0.5, 0)

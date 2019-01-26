@@ -3,11 +3,9 @@
 vx = camera_get_view_x(view_camera[0]);
 vy = camera_get_view_y(view_camera[0]);
 if(room == level2) {
-		MiddleMaker = 100	
-} else if(room == level3) {
-	MiddleMaker = 25;	
-} else if(room == level4) {
-	MiddleMaker = 0;	
+	MiddleMaker = 140
+} else if(room == level3 or room == level4) {
+	MiddleMaker = 60;	
 }
 
 if(global.Tab == true) {
@@ -25,8 +23,8 @@ with(Slot2) {
 }
 
 with(PlayButton) {
-	x = other.vx + 375;
-	y = other.vy + 300;
+	x = other.vx + 365;
+	y = other.vy + 320;
 }
 with(Hint) {
 	x = other.vx + 225;
@@ -51,21 +49,21 @@ if(room != level1) {
 }
 if(room != level2 and room != level1) {
 	with(Slot4) {
-		x = other.vx + 350 + 30;
+		x = other.vx + 350 + 30 + other.MiddleMaker;
 		y = other.vy + 200;
 	}
 	with(Slot5) {
-		x = other.vx + 425 + 30;
+		x = other.vx + 425 + 30 + other.MiddleMaker;
 		y = other.vy + 200;
 	}
 }
 if(room == level4) {
 	with(Slot6) {
-		x = other.vx + 500 + 30;
-		y = other.vy + 200;
+		x = other.vx + 240 + 30 + other.MiddleMaker;
+		y = other.vy + 260;
 	}
 	with(Slot7) {
-		x = other.vx + 575 + 30;
-		y = other.vy + 200;
+		x = other.vx + 310 + 30 + other.MiddleMaker;
+		y = other.vy + 260;
 	}
 }
