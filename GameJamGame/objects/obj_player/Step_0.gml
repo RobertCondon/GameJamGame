@@ -45,7 +45,7 @@ if(input_interact) {
 if (global.Tab == true){
 	move_x = 0;
 	move_y = 0;
-	instance_create_layer(obj_player.x, obj_player.y + 80, "Text", obj_puzzle_wall);
+	instance_create_layer(camera_get_view_x(view_camera[0]) + 370, camera_get_view_y(view_camera[0]) + 290, "Text", obj_puzzle_wall);
 }
 else{
 	instance_destroy(obj_puzzle_wall);
