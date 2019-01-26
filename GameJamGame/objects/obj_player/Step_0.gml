@@ -45,10 +45,8 @@ if(input_interact) {
 if (global.Tab == true){
 	move_x = 0;
 	move_y = 0;
-	instance_create_layer(obj_player.x, obj_player.y, "text", puzzle_wall);
 }
 else{
-	instance_destroy(puzzle_wall);
 	move_x = (input_right - input_left) * player_speed;
 	if(move_x = 0) move_y = (input_down - input_up) * player_speed;
 }
