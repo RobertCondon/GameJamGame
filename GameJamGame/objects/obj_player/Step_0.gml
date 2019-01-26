@@ -41,20 +41,23 @@ if(input_interact) {
 	}
 }
 
+
 //updating movement
 if (global.Tab == true){
 	move_x = 0;
 	move_y = 0;
-	instance_create_layer(camera_get_view_x(view_camera[0]) + 370, camera_get_view_y(view_camera[0]) + 290, "Text", obj_puzzle_wall);
+	draw_wall = true;
 }
 else{
-	instance_destroy(obj_puzzle_wall);
+	draw_wall = false;
 	move_x = (input_right - input_left) * player_speed;
 	move_y = (input_down - input_up) * player_speed;
 }
+
 //Collision Checks
 
 //Vertical
+if (move_y != 0){
 	if(place_meeting(x, y + move_y, obj_wall)) {
 		repeat (abs(move_y)) {
 			if(!place_meeting(x, y + sign(move_y), obj_wall)) {
@@ -64,10 +67,10 @@ else{
 		}
 		move_y = 0;
 	}
-
+}
 
 //Horizontal
-
+if (move_x != 0) {
 	if(place_meeting(x + move_x, y, obj_wall)) {
 		repeat (abs(move_x)) {
 			if(!place_meeting(x + sign(move_x), y, obj_wall)) {
@@ -77,7 +80,7 @@ else{
 		}
 		move_x = 0;
 	}
-
+}
 
 x += move_x;
 y += move_y;

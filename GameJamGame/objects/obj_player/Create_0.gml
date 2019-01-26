@@ -11,3 +11,4 @@ TalkedToNPC = 0;
 
 stop = false;
 text[0] = "I Remember Now!";
+draw_wall = false;

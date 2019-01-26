@@ -31,7 +31,7 @@ inv_UI_height = 96;
 gui_width = display_get_gui_width();
 gui_height = display_get_gui_height();
 
-spr_inv_UI = spr_Inventory;
+spr_inv_UI = spr_Inventory1;
 spr_inv_items = spr_items;
 
 spr_inv_items_columns = sprite_get_width(spr_inv_items)div cell_size;
