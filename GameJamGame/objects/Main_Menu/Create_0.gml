@@ -3,13 +3,20 @@
 
 menu_x = x;
 menu_y = y;
-button_height = 32;
+
+button_height = 40;
+button_width  = 100;
+
+font = fnt_Menu;
+
+draw_set_font(font);
+text_height = string_height("M");
 
 //buttons
-button[0] = "ROBS TESTROOM";
-button[1] = "JUANS TESTROOM";
-button[2] = "JORDANS TESTROOM";
-button[3] = "QUIT";
+button[0] = "PLAY";
+button[1] = "CREDITS";
+button[2] = "QUIT";
+
 
 buttons = array_length_1d(button);
 

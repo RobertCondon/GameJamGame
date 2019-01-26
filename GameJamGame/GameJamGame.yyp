@@ -495,6 +495,14 @@
             }
         },
         {
+            "Key": "8f9dce65-a15d-401b-b56e-28971c3d7894",
+            "Value": {
+                "id": "6792a491-76b5-4ce5-8239-3c539447ef0c",
+                "resourcePath": "rooms\\Credits\\Credits.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "94188663-67d4-42d7-81f7-10dc58a9f160",
             "Value": {
                 "id": "ee861fbb-4001-42f3-9639-dbfbf8c0c115",
@@ -540,6 +548,14 @@
                 "id": "6709d8cf-efb3-4593-a84f-2af21db94611",
                 "resourcePath": "sprites\\sprite1\\sprite1.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "a798f5be-9211-4ef9-b443-756f48df8f64",
+            "Value": {
+                "id": "7ae01ae5-c0af-411c-8d78-8783d58f022a",
+                "resourcePath": "fonts\\fnt_Menu\\fnt_Menu.yy",
+                "resourceType": "GMFont"
             }
         },
         {

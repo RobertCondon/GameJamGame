@@ -7,8 +7,8 @@ var tbox = instance_create_layer(0, 0, "text", obj_textbox);
 with(tbox){
 	if (argument[1] = false){text = argument[0];}
 	else {
-		text[0] = "'CANT TALK RIGHT NOW'" ;
-		text[1] = "THEY SEEM BUSY";
+		text[0] = "They seem busy" ;
+		
 		}
 	
 }

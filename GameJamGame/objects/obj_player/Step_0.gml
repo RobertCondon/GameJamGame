@@ -48,34 +48,44 @@ move_x = 0;
 move_y = 0;
 
 //updating movement
-move_x = (input_right - input_left) * player_speed;
-if(move_x = 0) move_y = (input_down - input_up) * player_speed;
-
+if (global.Tab == true){
+	move_x = 0;
+	move_y = 0;
+}
+else{
+	
+	move_x = (input_right - input_left) * player_speed;
+	if(move_x = 0) move_y = (input_down - input_up) * player_speed;
+}
 //Collision Checks
 
 //Vertical
-if(place_meeting(x, y + move_y, obj_wall)) {
-	repeat (abs(move_y)) {
-		if(!place_meeting(x, y + sign(move_y), obj_wall)) {
-			y += sign(move_y);
+if(move_x > 0){
+	
+	if(place_meeting(x, y + move_y, obj_wall)) {
+		repeat (abs(move_y)) {
+			if(!place_meeting(x, y + sign(move_y), obj_wall)) {
+				y += sign(move_y);
+			}
+			else { break; }
 		}
-		else { break; }
+		move_y = 0;
 	}
-	move_y = 0;
 }
 
 //Horizontal
-if(place_meeting(x + move_x, y, obj_wall)) {
-	repeat (abs(move_x)) {
-		if(!place_meeting(x + sign(move_x), y, obj_wall)) {
-			x += sign(move_x);
+if(move_y > 0){
+	
+	if(place_meeting(x + move_x, y, obj_wall)) {
+		repeat (abs(move_x)) {
+			if(!place_meeting(x + sign(move_x), y, obj_wall)) {
+				x += sign(move_x);
+			}
+			else { break; }
 		}
-		else { break; }
+		move_x = 0;
 	}
-	move_x = 0;
 }
-
-
 
 
 x += move_x;
