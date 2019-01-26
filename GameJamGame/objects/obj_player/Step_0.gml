@@ -21,6 +21,7 @@ if(input_interact) {
 					talked_too = true;
 					if (obj_inventory.filled_slot < obj_inventory.inv_slots) {
 						inv_grid[# 0, obj_inventory.filled_slot] = MusicHeld;
+						inv_grid[# 1, obj_inventory.filled_slot] = SpriteHeld;
 						obj_inventory.filled_slot += 1;
 					}
 				}

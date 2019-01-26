@@ -42,13 +42,13 @@ slots_y = info_y;
 
 //--------------Inventory
 
-ds_inventory = ds_grid_create(1,inv_slots);
+ds_inventory = ds_grid_create(2,inv_slots);
 
 //------- Items
 enum item {
 	none	= 0,
-	a	= 1,
-	qwe	= 2,
+	snd_Paino1	= 1,
+	snd_Paino2	= 2,
 	dsf	= 3,
 	salmon	= 4,
 	purple	= 5,

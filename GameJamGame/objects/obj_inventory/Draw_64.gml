@@ -79,15 +79,24 @@ instance_destroy(obj_MusicBlock)
 	var spritey = (currItem div spr_inv_items_columns) * cell_size;
 
 if(keyboard_check_pressed(vk_tab)){
+	vx = camera_get_view_x(view_camera[0]);
+	vy = camera_get_view_y(view_camera[0]);
 	repeat(filled_slot) {
 		
-		instance = instance_create_layer(100,100, "Instances", obj_MusicBlock);
+		instance = instance_create_layer(vx + 235 + (ii * 33) ,380 ,"Instances", obj_MusicBlock);
 		with(instance) {
 			Music = inv_grid[# 0, ii];
+			sprite_index = inv_grid[# 1, ii];
+			
+			
 		}
 		ii += 1;
 
 	}
+
+
+		
+
 }
 	
 
