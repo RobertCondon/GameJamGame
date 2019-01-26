@@ -2,7 +2,13 @@
 // You can write your code in this editor
 vx = camera_get_view_x(view_camera[0]);
 vy = camera_get_view_y(view_camera[0]);
-
+if(room == level2) {
+		MiddleMaker = 100	
+} else if(room == level3) {
+	MiddleMaker = 25;	
+} else if(room == level4) {
+	MiddleMaker = 0;	
+}
 
 if(global.Tab == true) {
 	Tabbed = true;
@@ -10,20 +16,20 @@ if(global.Tab == true) {
 	Tabbed = false;	
 }
 with(Slot1) {
-	x = other.vx + 125 + 30;
+	x = other.vx + 125 + 30 + other.MiddleMaker;
 	y = other.vy + 200;
 }
 with(Slot2) {
-	x = other.vx + 200 + 30;
+	x = other.vx + 200 + 30 +  other.MiddleMaker;
 	y = other.vy + 200;
 }
 
 with(PlayButton) {
-	x = other.vx + 200;
+	x = other.vx + 375;
 	y = other.vy + 300;
 }
 with(Hint) {
-	x = other.vx + 450;
+	x = other.vx + 225;
 	y = other.vy + 50;	
 	if(other.TotalyNPCs == obj_player.TalkedToNPC) {
 		if(room == level1) {
@@ -33,11 +39,13 @@ with(Hint) {
 		} else if(room == level3) {
 			Hint = "Happyness gets you hooked, curved around like an S and Looking for more."
 		}
+	} else {
+		Hint = "Seems you'll have to talk to more people to get a fair idea";	
 	}
 }
 if(room != level1) {
 	with(Slot3) {
-		x = other.vx + 275 + 30;
+		x = other.vx + 275 + 30 +  other.MiddleMaker;
 		y = other.vy + 200;
 	}
 }
