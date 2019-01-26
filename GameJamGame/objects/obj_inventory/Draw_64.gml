@@ -82,7 +82,7 @@ instance_destroy(obj_MusicBlock)
 if(global.Tab == true){
 	vx = camera_get_view_x(view_camera[0]);
 	vy = camera_get_view_y(view_camera[0]);
-	show_debug_message(string(RanThrough));
+	//show_debug_message(string(RanThrough));
 	if(RanThrough == false) {
 		RanThrough = true;
 		repeat(filled_slot) {

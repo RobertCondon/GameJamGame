@@ -10,11 +10,11 @@ if(global.Tab == true) {
 	Tabbed = false;	
 }
 with(Slot1) {
-	x = other.vx + 200;
+	x = other.vx + 125 + 30;
 	y = other.vy + 200;
 }
 with(Slot2) {
-	x = other.vx + 300;
+	x = other.vx + 200 + 30;
 	y = other.vy + 200;
 }
 
@@ -26,12 +26,38 @@ with(Hint) {
 	x = other.vx + 450;
 	y = other.vy + 50;	
 	if(other.TotalyNPCs == obj_player.TalkedToNPC) {
-		Hint = "Good job you got all the pieces. Your hint is: The tress rot away";
+		if(room == level1) {
+			Hint = "Good job you got all the pieces. Your hint is: The tress rot away";
+		} else if(room == level2) {
+			Hint = "As the weather turned the caravan took it's leave"
+		} else if(room == level3) {
+			Hint = "Happyness gets you hooked, curved around like an S and Looking for more."
+		}
 	}
 }
 if(room != level1) {
 	with(Slot3) {
-		x = other.vx + 400;
+		x = other.vx + 275 + 30;
+		y = other.vy + 200;
+	}
+}
+if(room != level2 and room != level1) {
+	with(Slot4) {
+		x = other.vx + 350 + 30;
+		y = other.vy + 200;
+	}
+	with(Slot5) {
+		x = other.vx + 425 + 30;
+		y = other.vy + 200;
+	}
+}
+if(room == level4) {
+	with(Slot6) {
+		x = other.vx + 500 + 30;
+		y = other.vy + 200;
+	}
+	with(Slot7) {
+		x = other.vx + 575 + 30;
 		y = other.vy + 200;
 	}
 }
