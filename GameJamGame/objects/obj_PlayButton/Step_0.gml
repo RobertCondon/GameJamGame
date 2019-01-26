@@ -47,12 +47,15 @@ if(OrderToPlay < NumberOfSlots) {
 } else {
 	QuickRunThrough = false;	
 	if(TotalRight == NumberOfSlots) {
-		show_message("CORRECT");
-		if(room == level1) {
-			room_goto(level2);	
-		}
-		TotalRight = 0;
-	} else {
-		TotalRight = 0;	
+		global.song_complete = true;
+		global.Tab = false;
 	}
 }
+		//show_message("CORRECT");
+		//if(room == level1) {
+			//room_goto(level2);	
+		//}
+		//TotalRight = 0;
+	//} else {
+		//TotalRight = 0;	
+	//}

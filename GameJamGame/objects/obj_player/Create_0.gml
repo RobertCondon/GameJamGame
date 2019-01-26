@@ -9,3 +9,5 @@ active_textbox = false;
 TalkedToNPC = 0;
 //num_of_interacts = 1;
 
+stop = false;
+text[0] = "I Remember Now!";

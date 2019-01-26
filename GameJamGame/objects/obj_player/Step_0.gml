@@ -45,8 +45,10 @@ if(input_interact) {
 if (global.Tab == true){
 	move_x = 0;
 	move_y = 0;
+	instance_create_layer(obj_player.x, obj_player.y + 80, "Text", obj_puzzle_wall);
 }
 else{
+	instance_destroy(obj_puzzle_wall);
 	move_x = (input_right - input_left) * player_speed;
 	move_y = (input_down - input_up) * player_speed;
 }
@@ -54,7 +56,6 @@ else{
 
 //Vertical
 	if(place_meeting(x, y + move_y, obj_wall)) {
-		show_debug_message("YEEE BOI");
 		repeat (abs(move_y)) {
 			if(!place_meeting(x, y + sign(move_y), obj_wall)) {
 				y += sign(move_y);
@@ -81,5 +82,9 @@ else{
 x += move_x;
 y += move_y;
 
-
+if (global.song_complete = true) and (global.Tab = false) and (stop = false){
+	create_textbox(text, false);
+	stop = true;
+}
+		
 

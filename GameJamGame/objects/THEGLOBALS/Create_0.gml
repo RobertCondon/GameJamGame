@@ -3,6 +3,8 @@
 global.MouseLeftGone = noone;
 global.MouseRightGone = noone;
 global.Tab = false;
+global.song_complete = false;
+
 Holding = false;
 Sounds[0] = snd_Paino1;
 Sounds[1] = snd_Paino2;

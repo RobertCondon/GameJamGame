@@ -10,17 +10,17 @@ if(global.Tab == true) {
 	Tabbed = false;	
 }
 with(Slot1) {
-	x = other.vx + 50;
-	y = other.vy + 50;
+	x = other.vx + 200;
+	y = other.vy + 200;
 }
 with(Slot2) {
-	x = other.vx + 150;
-	y = other.vy + 50;
+	x = other.vx + 300;
+	y = other.vy + 200;
 }
 
 with(PlayButton) {
-	x = other.vx + 350;
-	y = other.vy + 50;
+	x = other.vx + 200;
+	y = other.vy + 300;
 }
 with(Hint) {
 	x = other.vx + 450;
@@ -31,7 +31,7 @@ with(Hint) {
 }
 if(room != level1) {
 	with(Slot3) {
-		x = other.vx + 250;
-		y = other.vy + 50;
+		x = other.vx + 400;
+		y = other.vy + 200;
 	}
 }
