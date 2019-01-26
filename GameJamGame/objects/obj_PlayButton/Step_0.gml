@@ -14,11 +14,8 @@ if(OrderToPlay < NumberOfSlots) {
 					}
 				}
 			}
-			show_message(OrderToPlay);
 			if(CurrentList[OrderToPlay] == WinList[OrderToPlay]) {
-				TotalRight += 1;
-				show_message("done");
-				
+				TotalRight += 1;			
 			}
 			OrderToPlay += 1;
 		}

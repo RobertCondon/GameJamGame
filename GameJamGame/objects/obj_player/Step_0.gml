@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-
+object_set_mask(self, spr_PlayerCharacter);
 input_right = keyboard_check(ord("D"));
 input_left = keyboard_check(ord("A"));
 input_up = keyboard_check(ord("W"));
@@ -56,6 +56,7 @@ else{
 if(move_x > 0){
 	
 	if(place_meeting(x, y + move_y, obj_wall)) {
+		show_debug_message("YEEE BOI");
 		repeat (abs(move_y)) {
 			if(!place_meeting(x, y + sign(move_y), obj_wall)) {
 				y += sign(move_y);
