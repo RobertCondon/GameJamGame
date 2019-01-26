@@ -31,14 +31,6 @@
     },
     "resources": [
         {
-            "Key": "03336308-f872-4279-b4a2-5bf25d992675",
-            "Value": {
-                "id": "1c2fc231-854e-426d-a6b7-bb6d03ba4261",
-                "resourcePath": "views\\03336308-f872-4279-b4a2-5bf25d992675.yy",
-                "resourceType": "GMFolder"
-            }
-        },
-        {
             "Key": "0373cc9a-699c-471b-84aa-6ce55ccc2d39",
             "Value": {
                 "id": "95b51f61-408c-4369-9ef8-863f45f8fba0",
@@ -351,6 +343,14 @@
             }
         },
         {
+            "Key": "649a9b86-a36e-4b53-ba7c-edad7234b964",
+            "Value": {
+                "id": "b5f7f362-efe9-49c9-ab82-1f0ace940928",
+                "resourcePath": "rooms\\Menu\\Menu.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "64e3eab2-8efb-4c4e-94b0-280199a18d3f",
             "Value": {
                 "id": "9ee0f20b-449f-45e6-9798-551b68819996",
@@ -364,14 +364,6 @@
                 "id": "425e8642-b963-434c-87eb-a450df9d0081",
                 "resourcePath": "sprites\\spr_SoundTile8\\spr_SoundTile8.yy",
                 "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "649a9b86-a36e-4b53-ba7c-edad7234b964",
-            "Value": {
-                "id": "b5f7f362-efe9-49c9-ab82-1f0ace940928",
-                "resourcePath": "rooms\\Menu\\Menu.yy",
-                "resourceType": "GMRoom"
             }
         },
         {
@@ -391,6 +383,14 @@
             }
         },
         {
+            "Key": "72c77737-568e-4b77-b445-f12c40346cdb",
+            "Value": {
+                "id": "0f2f364e-8d94-4f45-b11c-68f67e8b7896",
+                "resourcePath": "sprites\\spr_HintBox1\\spr_HintBox1.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "738f913b-0b99-46da-943d-4da4c12435ca",
             "Value": {
                 "id": "cfe79fe7-6fad-4bba-96a9-c4f3cacf1322",
@@ -403,14 +403,6 @@
             "Value": {
                 "id": "0b94bfb0-52d7-449e-8ea6-d23b1ca878b1",
                 "resourcePath": "sprites\\spr_SoundTile11\\spr_SoundTile11.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "72c77737-568e-4b77-b445-f12c40346cdb",
-            "Value": {
-                "id": "0f2f364e-8d94-4f45-b11c-68f67e8b7896",
-                "resourcePath": "sprites\\spr_HintBox1\\spr_HintBox1.yy",
                 "resourceType": "GMSprite"
             }
         },
