@@ -16,4 +16,12 @@ if(room == roomROBTEST) {
 	CurrentList[2] = noone;
 	CurrentList[3] = noone;
 }
+
+if(room == level1) {
+	WinList[0] = snd_Paino1	
+	WinList[1] = snd_Paino2;	
+	WinListLength = 2;
+	CurrentList[0] = noone;
+	CurrentList[1] = noone;
+}
 QuickRunThrough = false;

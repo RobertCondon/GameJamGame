@@ -17,10 +17,7 @@ with(Slot2) {
 	x = other.vx + 150;
 	y = other.vy + 50;
 }
-with(Slot3) {
-	x = other.vx + 250;
-	y = other.vy + 50;
-}
+
 with(PlayButton) {
 	x = other.vx + 350;
 	y = other.vy + 50;
@@ -28,4 +25,10 @@ with(PlayButton) {
 with(Hint) {
 	x = other.vx + 450;
 	y = other.vy + 50;	
+}
+if(room != level1) {
+	with(Slot3) {
+		x = other.vx + 250;
+		y = other.vy + 50;
+	}
 }
