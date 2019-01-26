@@ -15,5 +15,5 @@ if (place_meeting(x, y, obj_player)) and (global.song_complete = true){
 }
 if (place_meeting(x, y, obj_player)) and (global.song_complete = false){
 
-	create_textbox(text, false);
+	create_textbox(text);
 }

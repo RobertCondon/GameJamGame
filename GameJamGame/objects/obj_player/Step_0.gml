@@ -16,7 +16,7 @@ if(input_interact) {
 		if(npc != noone) {
 			with(npc){
 				if(talked_too = false){
-					create_textbox(text, talked_too);
+					create_textbox(text);
 					talked_too = true;
 					other.TalkedToNPC += 1;
 					if (obj_inventory.filled_slot < obj_inventory.inv_slots) {
@@ -26,7 +26,10 @@ if(input_interact) {
 					}
 				}
 				else{
-					create_textbox(text, talked_too)
+					with(npc){
+						
+						create_textbox(text,)
+					}
 				}
 				
 			}
