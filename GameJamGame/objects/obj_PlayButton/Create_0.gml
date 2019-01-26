@@ -10,7 +10,7 @@ if(room == roomROBTEST) {
 	WinList[1] = snd_Test2;
 	WinList[2] = snd_Test3;
 	WinList[3] = snd_Test4;
-	WinListLength = 4;
+	WinListLength = 3;
 	CurrentList[0] = noone;
 	CurrentList[1] = noone;
 	CurrentList[2] = noone;

@@ -68,8 +68,8 @@ enum item {
 	
 }
 
+
 var yy = 0; repeat(inv_slots) {
 	ds_inventory[# 0, yy] = -1;
 	yy += 1;
 }
-
