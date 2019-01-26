@@ -3,7 +3,7 @@
 game_width = display_get_gui_width();
 game_height = display_get_gui_height();
 
-box = spr_textbox;
+box = spr_HintBox1;
 
 box_width = sprite_get_width(box);
 box_height = sprite_get_height(box);
@@ -11,8 +11,8 @@ box_height = sprite_get_height(box);
 box_x = game_width/ 4;
 box_y = (game_height * 0.98) - box_height
 
-text_x = box_x + 12;
-text_y = box_y + 8
+text_x = box_x + 24;
+text_y = box_y + 16;
 text_max_width = box_width - 24;
 
 
