@@ -9,3 +9,6 @@ active_textbox = false;
 TalkedToNPC = 0;
 //num_of_interacts = 1;
 
+game_width = display_get_gui_width();
+game_height = display_get_gui_height();
+

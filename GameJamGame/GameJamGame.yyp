@@ -199,6 +199,14 @@
             }
         },
         {
+            "Key": "2ea858ee-5a77-4d9e-9d4f-6caa215d8004",
+            "Value": {
+                "id": "2a7fc7a3-9bf0-4f95-9c75-1516e466132a",
+                "resourcePath": "objects\\puzzle_wall\\puzzle_wall.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "2f57079e-1e5f-49d5-a0c4-e78bfc0beac2",
             "Value": {
                 "id": "fa0c7bad-d5c2-4d4b-82f0-81f13dfb452f",
@@ -427,6 +435,14 @@
             "Value": {
                 "id": "c3bfef03-76bd-4929-9802-6d6d835045a9",
                 "resourcePath": "sprites\\spr_SoundEffect2\\spr_SoundEffect2.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "7e02beca-cd0a-403c-9bc5-3b5f5599ae9c",
+            "Value": {
+                "id": "045e7ff6-4221-4f7e-a3ef-3d078848596d",
+                "resourcePath": "sprites\\puzzle_back\\puzzle_back.yy",
                 "resourceType": "GMSprite"
             }
         },
