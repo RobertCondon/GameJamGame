@@ -5,15 +5,20 @@ if(OrderToPlay < NumberOfSlots) {
 		repeat(NumberOfSlots) {
 			with(obj_Slot) {
 				if(Order == other.OrderToPlay) {
+					
 					if(instance != noone) {
 						other.CurrentList[Order] = instance.Music;
+						
 					} else {
 						other.CurrentList[Order] = snd_Noone;
 					}
 				}
 			}
+			show_message(OrderToPlay);
 			if(CurrentList[OrderToPlay] == WinList[OrderToPlay]) {
-				TotalRight += 1;	
+				TotalRight += 1;
+				show_message("done");
+				
 			}
 			OrderToPlay += 1;
 		}

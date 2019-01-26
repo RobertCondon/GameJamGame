@@ -1,1 +1,2 @@
-Music = snd_Paino1;
+MusicHeld = snd_Paino1;
+SpriteHeld = spr_SoundTile1;

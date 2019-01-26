@@ -27,8 +27,8 @@ gui_height = display_get_gui_height();
 spr_inv_UI = spr_Inventory;
 spr_inv_items = spr_items;
 
-spr_inv_items_columns = sprite_get_width(spr_inv_items)/cell_size;
-spr_inv_items_rows = sprite_get_height(spr_inv_items)/cell_size;
+spr_inv_items_columns = sprite_get_width(spr_inv_items)div cell_size;
+spr_inv_items_rows = sprite_get_height(spr_inv_items) div cell_size;
 
 inv_UI_x = (gui_width * 0.5) - (inv_UI_width * 0.5 * scale);
 inv_UI_y = gui_height - inv_UI_height;
