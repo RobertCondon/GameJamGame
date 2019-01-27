@@ -22,8 +22,10 @@ repeat(inv_slots) {
 	yy = slots_y + ((cell_size + y_buffer) * iy * scale);
 	
 	//item
-	currItem = inv_grid[# 0, ii];
-	spritex = (currItem mod spr_inv_items_columns) * cell_size;
+	currItem = inv_grid[# 0, ii] - 5;
+
+	spritex = ((currItem mod spr_inv_items_columns) * cell_size );
+	show_debug_message(string(currItem mod spr_inv_items_columns));
 	spritey = (currItem div spr_inv_items_columns) * cell_size;
 	
 	//draw slot and item
@@ -31,7 +33,7 @@ repeat(inv_slots) {
 	switch(ii) {
 		case selected_slot:
 			draw_sprite_part_ext(
-				spr_inv_items, 0, spritex-(5*32), spritey, cell_size, cell_size,
+				spr_inv_items, 0, spritex, spritey, cell_size, cell_size,
 				xx, yy, scale, scale, c_white, 1
 			);
 			gpu_set_blendmode(bm_add);
@@ -41,13 +43,13 @@ repeat(inv_slots) {
 		
 		case pickup_slot:
 			draw_sprite_part_ext(
-				spr_inv_items, 0, spritex - (5*32), spritey, cell_size, cell_size,
+				spr_inv_items, 0, spritex, spritey, cell_size, cell_size,
 				xx, yy, scale, scale, c_white, .2
 			);
 		
 		default:
 			draw_sprite_part_ext(
-				spr_inv_items, 0, spritex-(5*32), spritey, cell_size, cell_size,
+				spr_inv_items, 0, spritex, spritey, cell_size, cell_size,
 				xx, yy, scale, scale, c_white, 1
 			);
 		
