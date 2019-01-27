@@ -31,16 +31,16 @@ with(Hint) {
 	y = other.vy + 50;	
 	if(other.TotalyNPCs == obj_player.TalkedToNPC) {
 		if(room == level1) {
-			Hint = "Good job you got all the pieces. Your hint is: The tress rot away";
+			Hint = "Good job! You got all the pieces. Your hint is: The trees rot away";
 		} else if(room == level2) {
-			Hint = "As the weather turned the caravan took it's leave"
+			Hint = "As the weather turned, the caravan took its leave"
 		} else if(room == level3) {
-			Hint = "Happyness gets you hooked, curved around like an S and Looking for more."
+			Hint = "Happiness gets you hooked. It curves around like an S, then hooks you deeper. Yet I'm always Looking for more at the end."
 		} else if (room == level4) {
 			Hint = "He is happiest, be he king or peasant, who finds peace in his own home. -Johann Wolfgang von Goethe";
 		}
 	} else {
-		Hint = "Seems you'll have to talk to more people to get a fair idea";	
+		Hint = "Seems you'll have to talk to more people to get a some ideas";	
 	}
 }
 if(room != level1) {

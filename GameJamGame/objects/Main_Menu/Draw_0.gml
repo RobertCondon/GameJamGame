@@ -18,7 +18,3 @@ repeat(buttons) {
 }
 
 
-draw_set_font(fnt_title);
-draw_set_color(c_ltgray);
-draw_text(menu_x,menu_y - 100, "Memories of Melodies");
-
