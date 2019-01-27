@@ -4,8 +4,8 @@
 menu_x = x;
 menu_y = y;
 
-button_height = 40;
-button_width  = 100;
+button_height = 60;
+button_width  = 200;
 
 font = fnt_Menu;
 
@@ -22,3 +22,5 @@ buttons = array_length_1d(button);
 
 menu_index = 0;
 last_selected = 0;
+
+

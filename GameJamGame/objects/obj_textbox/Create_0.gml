@@ -10,10 +10,10 @@ box_height = sprite_get_height(box);
 
 
 
-box_x = (game_width * 0.5) - box_width * 0.5 - 15;
+box_x = (game_width * 0.5) - box_width * 0.5;
 box_y = (game_height * 0.98) - box_height
 
-text_x = box_x + 60;
+text_x = box_x + 20;
 text_y = box_y + 16;
 text_max_width = box_width - 24;
 
