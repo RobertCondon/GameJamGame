@@ -35,7 +35,8 @@
         "e12ae299-8f9f-483b-8bb7-ca745875233b",
         "4825492a-ee78-4f55-bd09-2e2b8b2c0291",
         "906d7941-f51b-4834-95bb-b3e02abfd140",
-        "a7ae6c59-4ef0-453c-9f62-bd628351faba"
+        "a7ae6c59-4ef0-453c-9f62-bd628351faba",
+        "642105de-472d-4a2e-9460-990ae22e7536"
     ],
     "IsDnD": false,
     "layers": [
@@ -53,7 +54,7 @@
             "inheritSubLayers": false,
             "inheritVisibility": false,
             "instances": [
-
+{"name": "inst_7CD1B779","id": "642105de-472d-4a2e-9460-990ae22e7536","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_7CD1B779","objId": "b2d9b110-1e36-4955-b511-5bcd308416e2","properties": null,"rotation": 0,"scaleX": 0.93875,"scaleY": 0.875,"mvc": "1.0","x": 750,"y": 420}
             ],
             "layers": [
 
@@ -224,8 +225,8 @@
             "name": "Trees",
             "id": "7c9f2e70-707e-45a5-aeb0-719718b11217",
             "depth": 600,
-            "grid_x": 32,
-            "grid_y": 32,
+            "grid_x": 750,
+            "grid_y": 420,
             "hierarchyFrozen": false,
             "hierarchyVisible": true,
             "inheritLayerDepth": false,
