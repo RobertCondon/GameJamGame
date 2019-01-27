@@ -3,6 +3,7 @@
 if(global.MouseLeftGone) {
 	THEGLOBALS.Holding = false;	
 	Holding = false;
+	PlayEffect = false;
 }
 if(Holding == true) {
 	self.x = mouse_x;
