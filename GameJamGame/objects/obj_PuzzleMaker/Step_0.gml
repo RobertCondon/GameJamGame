@@ -36,6 +36,8 @@ with(Hint) {
 			Hint = "As the weather turned the caravan took it's leave"
 		} else if(room == level3) {
 			Hint = "Happyness gets you hooked, curved around like an S and Looking for more."
+		} else if (room == level4) {
+			Hint = "He is happiest, be he king or peasant, who finds peace in his own home. -Johann Wolfgang von Goethe";
 		}
 	} else {
 		Hint = "Seems you'll have to talk to more people to get a fair idea";	
