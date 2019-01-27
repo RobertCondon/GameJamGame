@@ -978,7 +978,7 @@
             "Key": "c8f871e6-d66a-4f18-ad11-06b5b2b9fd15",
             "Value": {
                 "id": "7b143537-3b0a-4073-9e4c-29a54f36007c",
-                "resourcePath": "sprites\\spr_SoundTile12\\spr_SoundTile12.yy",
+                "resourcePath": "sprites\\spr_SoundTile14\\spr_SoundTile14.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1050,7 +1050,7 @@
             "Key": "d2d6f22f-0392-4081-9bf2-75ec8b045919",
             "Value": {
                 "id": "ddcf833b-e168-4efb-b439-080aefebf5b0",
-                "resourcePath": "sprites\\spr_SoundTile14\\spr_SoundTile14.yy",
+                "resourcePath": "sprites\\spr_SoundTile12\\spr_SoundTile12.yy",
                 "resourceType": "GMSprite"
             }
         },
