@@ -25,7 +25,6 @@ repeat(inv_slots) {
 	currItem = inv_grid[# 0, ii] - 5;
 
 	spritex = ((currItem mod spr_inv_items_columns) * cell_size );
-	show_debug_message(string(currItem mod spr_inv_items_columns));
 	spritey = (currItem div spr_inv_items_columns) * cell_size;
 	
 	//draw slot and item
@@ -84,7 +83,6 @@ instance_destroy(obj_MusicBlock)
 if(global.Tab == true){
 	vx = camera_get_view_x(view_camera[0]);
 	vy = camera_get_view_y(view_camera[0]);
-	//show_debug_message(string(RanThrough));
 	if(RanThrough == false) {
 		RanThrough = true;
 		repeat(filled_slot) {

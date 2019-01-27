@@ -17,7 +17,7 @@ if(OrderToPlay < NumberOfSlots) {
 			}
 			if(CurrentList[OrderToPlay] == WinList[OrderToPlay]) {
 				TotalRight += 1;			
-				//show_debug_message("TotalRight so far: " + string(TotalRight));
+				
 			}
 			OrderToPlay += 1;
 		}
@@ -63,11 +63,3 @@ if(OrderToPlay < NumberOfSlots) {
 	}
 	TotalRight = 0;
 }
-		//show_message("CORRECT");
-		//if(room == level1) {
-			//room_goto(level2);	
-		//}
-		//TotalRight = 0;
-	//} else {
-		//TotalRight = 0;	
-	//}
