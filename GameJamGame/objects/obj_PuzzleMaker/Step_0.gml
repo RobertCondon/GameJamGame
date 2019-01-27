@@ -31,7 +31,7 @@ with(Hint) {
 	y = other.vy + 50;	
 	if(other.TotalyNPCs == obj_player.TalkedToNPC) {
 		if(room == level1) {
-			Hint = "Good job! You got all the pieces. Your hint is: The trees rot away";
+			Hint = "Good job! You got all the pieces. Your hint is: Rot turns back into trees here";
 		} else if(room == level2) {
 			Hint = "As the weather turned, the caravan took its leave"
 		} else if(room == level3) {
