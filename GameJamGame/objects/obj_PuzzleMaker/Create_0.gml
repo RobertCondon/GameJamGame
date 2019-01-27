@@ -11,14 +11,16 @@ Slot5 = noone;
 PlayButton = noone;
 Hint = noone;
 TotalyNPCs = 0;
-MiddleMaker = 175;
+MiddleMaker = 170;
 with(instance_create_layer(vx + 50, vy +50, "Instances", obj_Slot)) {
 		other.Slot1 = self
 		Order = 0;
+		Number = 1;
 }
 with(instance_create_layer(vx + 150, vy +50, "Instances", obj_Slot)) {
 		other.Slot2 = self
 		Order = 1;
+		Number = 2;
 }
 
 with(instance_create_layer(vx + 350, vy +50, "Instances", obj_PlayButton)) {
@@ -35,6 +37,7 @@ if(room != level1) {
 	with(instance_create_layer(vx + 250, vy +50, "Instances", obj_Slot)) {
 			other.Slot3 = self
 			Order = 2;
+			Number = 3;
 	}
 	
 }
@@ -45,12 +48,14 @@ if(room != level1 and room != level2) {
 	with(instance_create_layer(vx + 250, vy +50, "Instances", obj_Slot)) {
 			other.Slot4 = self
 			Order = 3;
+			Number = 4;
 	}
 	
 	
 	with(instance_create_layer(vx + 250, vy +50, "Instances", obj_Slot)) {
 			other.Slot5 = self
 			Order = 4;
+			Number = 5;
 	}
 	
 }
@@ -61,6 +66,7 @@ if(room == level4) {
 	with(instance_create_layer(vx + 250, vy +50, "Instances", obj_Slot)) {
 			other.Slot6 = self
 			Order = 5;
+			Number = 6;
 	}
 	
 	Slot7 = noone;
@@ -68,6 +74,7 @@ if(room == level4) {
 	with(instance_create_layer(vx + 250, vy +50, "Instances", obj_Slot)) {
 			other.Slot7 = self
 			Order = 6;
+			Number = 7;
 	}
 }
 

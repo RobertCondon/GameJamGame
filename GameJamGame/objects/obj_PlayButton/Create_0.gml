@@ -5,6 +5,7 @@ OrderToPlay = 9999;
 AuidoPlaying = false;
 CurrentSlot = noone;
 TotalRight = 0;
+PlayEffect = false;
 if(room == roomROBTEST) {
 	WinList[0] = snd_Test1;
 	WinList[1] = snd_Test2;
@@ -19,7 +20,7 @@ if(room == roomROBTEST) {
 }
 
 if(room == level1) {
-	WinList[0] = snd_Paino1	
+	WinList[0] = snd_Paino1;
 	WinList[1] = snd_Paino2;	
 	WinListLength = 2;
 	NumberOfSlots = 2;

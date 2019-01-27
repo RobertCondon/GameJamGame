@@ -2,6 +2,7 @@
 // You can write your code in this editor
 if(OrderToPlay < NumberOfSlots) {
 	if(QuickRunThrough == false) {
+		PlayEffect = false;
 		repeat(NumberOfSlots) {
 			with(obj_Slot) {
 				if(Order == other.OrderToPlay) {
@@ -16,6 +17,7 @@ if(OrderToPlay < NumberOfSlots) {
 			}
 			if(CurrentList[OrderToPlay] == WinList[OrderToPlay]) {
 				TotalRight += 1;			
+				//show_debug_message("TotalRight so far: " + string(TotalRight));
 			}
 			OrderToPlay += 1;
 		}
@@ -49,6 +51,15 @@ if(OrderToPlay < NumberOfSlots) {
 	if(TotalRight == NumberOfSlots) {
 		global.song_complete = true;
 		global.Tab = false;
+		if(PlayEffect == false) {
+			PlayEffect = true;
+			audio_play_sound(snd_CorrectSound, 4, false);	
+		}
+	} else {
+		if(PlayEffect == false) {
+			PlayEffect = true;
+			audio_play_sound(snd_IncorrectSound, 4, false);	
+		}	
 	}
 }
 		//show_message("CORRECT");

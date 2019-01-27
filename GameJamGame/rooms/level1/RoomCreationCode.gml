@@ -1,0 +1,1 @@
+audio_play_sound(snd_Level1Ambience, 2, true);
