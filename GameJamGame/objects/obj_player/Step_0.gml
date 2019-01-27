@@ -88,7 +88,6 @@ if (move_x != 0) {
 
 
 if(room == level5) {
-	show_debug_message("Y = " + string(y) + " Move_Y = " + string(move_y) + " Move_X = " + string(move_x))
 	if(move_y >= 0 or y < 1652 or move_x != 0) {
 		move_x = 0;
 		move_y = 0;
