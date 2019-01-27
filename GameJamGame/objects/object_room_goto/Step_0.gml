@@ -10,6 +10,8 @@ if (place_meeting(x, y, obj_player)) and (global.song_complete = true){
 		room_goto(level3);	
 	} else if(room == level3) {
 		room_goto(level4);	
+	} else { 
+		room_goto(level5);	
 	}
 	
 }

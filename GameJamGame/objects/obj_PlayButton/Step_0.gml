@@ -61,6 +61,7 @@ if(OrderToPlay < NumberOfSlots) {
 			audio_play_sound(snd_IncorrectSound, 4, false);	
 		}	
 	}
+	TotalRight = 0;
 }
 		//show_message("CORRECT");
 		//if(room == level1) {
